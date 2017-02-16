@@ -1,0 +1,26 @@
+{
+  "name": "ng-classified",
+  "version": "1.0.0",
+  "description": "It is classified application with AngularJS. Here user can post Item to sell.  Admin have the priviledget to edit, delete, create a post.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gopalprasad780/ngClassified.git"
+  },
+  "author": "Gopal Prasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gopalprasad780/ngClassified/issues"
+  },
+  "homepage": "https://github.com/gopalprasad780/ngClassified#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-animate": "^1.6.2",
+    "angular-material": "^1.1.3",
+    "mdi": "^1.8.36"
+  },
+  "devDependencies": {}
+}
