@@ -17,6 +17,14 @@
               url: '/new',
               templateUrl:'component/classifieds/new/classifieds.new.tpl.html ',
               controller:'newClassifiedsCtrl as vm'
+        })
+        .state('classifieds.edit',{
+              url: '/edit/:id',
+              templateUrl:'component/classifieds/edit/classifieds.edit.tpl.html ',
+              controller:'editClassifiedsCtrl as vm',
+              params:{
+                  controller:null
+              }
         });
 
     });
