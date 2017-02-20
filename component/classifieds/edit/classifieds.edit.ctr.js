@@ -6,6 +6,7 @@
 
              var vm = this;
              vm.closeSidenav = closeSidenav;
+             vm.classified = $state.params.classified;
              vm.saveEdit = saveEdit;
              
              $timeout(function(){
@@ -29,6 +30,8 @@
              }
              
              function saveEdit(){
+                 $scope.$emit('editSaved','Edit Saved !');
+                 vm.sidenavOpen = false;
                  
              }
               

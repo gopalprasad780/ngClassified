@@ -36,6 +36,9 @@ angular.module('ngClassified')
       showToast('New Classified is added');
        
   });
+  $scope.$on('editSaved', function(event, message){
+    showToast(message);
+  });
      function openSidenav(){
      $state.go('classifieds.new');
     };
@@ -66,12 +69,10 @@ angular.module('ngClassified')
         )
   }
   function editClassified(classified){
-    if(classified){
-        vm.editing = true;
-    }
-   
-     openSidenav();
-    vm.classified = classified;
+     $state.go('classifieds.edit',{
+       id: classified.id,
+       classified: classified
+     });
   }
   function saveEdit(){
     vm.editing = false;

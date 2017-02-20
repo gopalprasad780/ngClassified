@@ -23,7 +23,7 @@
               templateUrl:'component/classifieds/edit/classifieds.edit.tpl.html ',
               controller:'editClassifiedsCtrl as vm',
               params:{
-                  controller:null
+                  classified:null
               }
         });
 
